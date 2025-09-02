@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:description" content="My Personal Portfolio">
+    <script></script>
+ <title>Timeline</title>
+</head>
+
+<body>
+    <form id="form">
+       <h3>Name:</h3> <input type="name" name="name">
+       <h3>Email:</h3> <input type="email" name="email">
+       <h3>Content:</h3> <input type="content" name="content">
+      <button type="submit">Submit</button>
+    </form> 
+    <script>
+    
+    const form = document.getElementById('form');
+ 
+ form.addEventListener('submit', function(e) {
+     // Prevent default behavior:
+     // Create payload as new FormData object:
+     const payload = new FormData(form);
+     console.log([... payload]);
+ })
+        </script>
+</body>
+</html>
